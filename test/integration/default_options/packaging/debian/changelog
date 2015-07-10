@@ -1,4 +1,4 @@
-grunt-debian-package (0.1.7-1) experimental; urgency=low
+grunt-deb (0.1.7-1) experimental; urgency=low
 
   * Initial release. (Closes: #XXXXXX)
 

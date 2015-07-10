@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 
     var _validateOptions = require('./options.js')._validate(grunt);
 
-    grunt.registerMultiTask('debian_package', 'Create debian package from grunt build', function () {
+    grunt.registerMultiTask('deb_package', 'Create debian package from grunt build', function () {
             // tell Grunt this task is asynchronous.
             var done = this.async();
 

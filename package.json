@@ -1,5 +1,5 @@
 {
-  "name": "grunt-debian-package",
+  "name": "grunt-deb",
   "description": "Create debian package from grunt build",
   "version": "0.1.11",
   "homepage": "https://github.com/paulvarache/grunt-debian-package",

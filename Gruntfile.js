@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         },
 
         // configuration to be run (and then tested)
-        debian_package: {
+        deb_package: {
             default_options: {
                 options: {
                     quiet: true,
@@ -152,7 +152,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
-    grunt.registerTask('test', ['clean:pre_test', 'debian_package', 'nodeunit', 'clean:post_test']);
+    grunt.registerTask('test', ['clean:pre_test', 'deb_package', 'nodeunit', 'clean:post_test']);
 
     grunt.registerTask('default', ['jshint', 'test']);
     grunt.registerTask('travis', ['jshint', 'test']);
