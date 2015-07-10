@@ -1,15 +1,8 @@
-# grunt-debian-package 
+# grunt-deb
 
 > Create debian package from grunt build
 
 Grunt plugin to create a Debian package, allowing JavaScript applications to be easily integration into a Debian or Ubuntu based continuous delivery pipeline.
-
-[![Build Status](https://secure.travis-ci.org/jamesdbloom/grunt-debian-package.png?branch=master)](http://travis-ci.org/jamesdbloom/grunt-debian-package)  [![Dependency Status](https://david-dm.org/jamesdbloom/grunt-debian-package.png)](https://david-dm.org/jamesdbloom/grunt-debian-package) [![devDependency Status](https://david-dm.org/jamesdbloom/grunt-debian-package/dev-status.png)](https://david-dm.org/jamesdbloom/grunt-debian-package#info=devDependencies) [![Code Climate](https://codeclimate.com/github/jamesdbloom/grunt-debian-package.png)](https://codeclimate.com/github/jamesdbloom/grunt-debian-package)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jamesdbloom/grunt-debian-package/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Stories in Backlog](https://badge.waffle.io/jamesdbloom/grunt-debian-package.png?label=backlog&title=Backlog)](https://waffle.io/jamesdbloom/grunt-debian-package)
-
-
-
-[![NPM](https://nodei.co/npm/grunt-debian-package.png?downloads=true&stars=true)](https://nodei.co/npm/grunt-debian-package/) [![wercker status](https://app.wercker.com/status/1bd98ba2b740e62bf5f15cb335de7495/m "wercker status")](https://app.wercker.com/project/bykey/1bd98ba2b740e62bf5f15cb335de7495)
 
 ## Getting Started
 This plugin requires Grunt `~0.4`
@@ -412,27 +405,3 @@ options: {
 
 **maintainer** is taken from the standard debian environment variables `DEBFULLNAME` and `DEBEMAIL`.  **name**, **short_description**, **long_description** and **version** are all read from the *package.json*.  **short_description** is taken as the first line of the `description` value and **long_description** is taken as the rest of the `description` value.  **build_number** is taken from the the environment variables `BUILD_NUMBER` or `DRONE_BUILD_NUMBER` or `TRAVIS_BUILD_NUMBER` which are the build number environment variables for Jenkins, drone.io and TravisCI respectively.
 
-## Future Plans
-1. Add options to support custom copyright file
-2. Add options to support generation of changelist from git log
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
- * 2014-27-04   v0.1.0   Released debian_package task
- * 2014-28-04   v0.1.1   Fixed issue with some dependencies
- * 2014-28-04   v0.1.2   Add back missing dirs and links files
- * 2014-29-04   v0.1.3   Removed requirement for long descriptions
- * 2014-03-05   v0.1.4   Added test framework and fixed bugs
- * 2014-15-05   v0.1.5   Added support for dput
- * 2014-16-05   v0.1.6   Fixed errors with package upload
- * 2014-23-06   v0.1.7   Added support for postfix
- * 2014-24-06   v0.1.8   Minor tweaks and better test coverage
- * 2014-09-07   v0.1.9   Added initial support for post/pre scripts
- * 2014-09-07   v0.1.10  Multiple minor bug fixes and improvements
- * 2014-09-07   v0.1.11  Several minor bug fixes and improvements
-
----
-
-Task submitted by [James D Bloom](http://blog.jamesdbloom.com)
