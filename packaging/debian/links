@@ -1,1 +1,1 @@
-${softlinks}
+<%= links %>

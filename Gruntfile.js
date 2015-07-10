@@ -75,16 +75,16 @@ module.exports = function (grunt) {
                     },
                     links: [
                         {
-                            source: '/var/log/${name}',
+                            source: '/var/log/${package_name}',
                             target: '/var/log/tomcat7'
                         },
                         {
-                            source: '/etc/init.d/${name}',
+                            source: '/etc/init.d/${package_name}',
                             target: '/etc/init.d/tomcat7'
                         }
                     ],
                     directories: [
-                        '/var/app/${name}'
+                        '/var/app/${package_name}'
                     ],
                     working_directory: 'test/integration/tmp/',
                     simulate: true
