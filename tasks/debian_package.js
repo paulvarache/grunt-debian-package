@@ -140,7 +140,8 @@ module.exports = function (grunt) {
             grunt.verbose.writeln('Running \'debuild --no-tgz-check -sa -us -uc --lintian-opts --suppress-tags tar-errors-from-data,tar-errors-from-control,dir-or-file-in-var-www\'');
             if (!options.simulate) {
                 if (grunt.file.exists('/usr/bin/debuild')) {
-                    var debuild = spawn(DEBUILD_CMD.shift(), DEBUILD_CMD, {
+                    var cmd = DEBUILD_CMD.split(' ');
+                    var debuild = spawn(cmd.shift(), cmd, {
                         cwd: temp_directory,
                         stdio: [ 'ignore', (grunt.option('verbose') ? process.stdout : 'ignore'), process.stderr ]
                     });

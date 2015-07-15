@@ -1,7 +1,7 @@
 {
   "name": "grunt-deb",
   "description": "Create debian package from grunt build",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "homepage": "https://github.com/paulvarache/grunt-debian-package",
   "author": {
     "name": "Paul Varache",
